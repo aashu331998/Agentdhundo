@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+    <package name="agents" namespace="/" extends="struts-default">
+        
+        <action name="agentdhundo">
+            <result>agentdhundo.jsp</result>
+        </action>
+        
+        <action name="usersignup" class="struts.action.RegistrationAction">
+            <result name="success">usersignin.jsp</result>
+        </action>
+        
+        <action name="usersignin" class="struts.action.UserLoginAction">
+            <result name="success">agentdhundo.jsp</result>
+            <result name="error">usersignin.jsp</result>
+        </action> 
+          
+        <action name="adminlogin" class="struts.action.AdminLoginAction">
+            <result name="success">agentdhundo.jsp</result>
+            <result name="error">usersignin.jsp</result>
+        </action>
+        
+        <action name="agentlogin" class="struts.action.AgentLoginAction">
+            <result name="success">agentdhundo.jsp</result>
+            <result name="error">agentsignup.jsp</result>
+        </action>
+        
+        <action name="agentsignup" class="struts.action.AgentRegistrationAction">
+            <result name="success">agentlogin.jsp</result>
+        </action>
+        
+        <action name="propertyagents">
+            <result>propertyagents.jsp</result>
+        </action>
+      
+    </package>
+</struts>

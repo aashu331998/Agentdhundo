@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hib.dto">
+    <class name="PropertyInformation" table="propertyinformation">
+        <id name="agentId" column="agentid"></id>
+        <property name="agentName" column="agentname"></property>
+        <property name="location" column="location"></property>
+        <property name="size" column="size"></property>
+        <property name="agentContactNo" column="agentcontactno"></property>
+        <property name="officeAddress" column="officeaddress"></property>
+    </class>
+</hibernate-mapping>

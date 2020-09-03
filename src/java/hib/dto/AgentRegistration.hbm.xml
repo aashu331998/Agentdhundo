@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hib.dto">
+    <class name="AgentRegistration" table="agentregistration">
+        <id name="agentRegId" column="agentregid"></id>
+        <property name="agentRegName" column="agentregname"></property>
+        <property name="agentRegLocation" column="agentreglocation"></property>
+        <property name="agentRegOfficeAdd" column="agentregofficeadd"></property>
+        <property name="agentRegContactNo" column="agentregcontactno"></property>
+        <property name="agentRegPass" column="agentregpass"></property>
+    </class>
+</hibernate-mapping>
